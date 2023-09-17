@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Edit Profile</title>
+  </head>
+  <body>
+    <table border="0" width="100%">
+        <tr>
+          <td style="vertical-align: top">
+            <ul>
+              <li>
+                <a href="../../../../public/kanbas/account/profile/index.html">Account</a>
+              </li>
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li>
+                <a href="../../../../public/kanbas/courses/home/home.html">Courses</a>
+              </li>
+              <li>
+                <a href="#">Calendar</a>
+              </li>
+              <li>
+                <a href="#">Inbox</a>
+              </li>
+              <li>
+                <a href="#">History</a>
+              </li>
+              <li>
+                <a href="#">Studio</a>
+              </li>
+              <li>
+                <a href="#">Conmons</a>
+              </li>
+              <li>
+                <a href="#">Help</a>
+              </li>
+            </ul>
+          </td>
+          <td style="vertical-align: top">
+            <ul>
+              <li>
+                <a href="#">Notifications</a>
+              </li>
+              <li>
+                <a href="../../../../public/kanbas/account/profile/index.html">Profile</a>
+              </li>
+              <li>
+                <a href="#">Files</a>
+              </li>
+              <li>
+                <a href="#">Settings</a>
+              </li>
+              <li>
+                <a href="#">ePortfolios</a>
+              </li>
+              <li>
+                <a href="#">Shared Content</a>
+              </li>
+              <li>
+                <a href="#">The Hub</a>
+              </li>
+              <li>
+                <a href="#">Qwickly Course Tools</a>
+              </li>
+              <li>
+                <a href="#">Global Announcements</a>
+              </li>
+            </ul>
+          </td>
+          <td style="vertical-align: top">
+            <h2>Victor Louie</h2>
+            <form id="form-edit-profile" action="../../../../public/kanbas/account/profile/index.html">
+              <label for="input-edit-profile-name">Name:*</label>
+              <input
+                type="text"
+                placeholder="Victor Louie"
+                id="input-edit-profile-name"
+              />
+              <label for="select-edit-profile-pronouns">Pronouns:</label>
+              <select id="select-edit-profile-pronouns">
+                <option value="NONE">None</option>
+              </select>
+              <br />
+              <label for="input-edit-profile-title">Title:</label>
+              <input type="text" id="input-edit-profile-title" />
+              <h3>Contact</h3>
+              No registered services, you can add some on the
+              <a href="#">settings</a> page.
+              <h3>Biography</h3>
+              Faculty, Software Engineer, Music Listener
+              <br />
+              <textarea cols="42" rows="3">Faculty, Software Engineer, Music Listener</textarea>
+              <h3>Links</h3>
+              <ul>
+                  <li>
+                      <a href="#">YouTube</a> Links to an external site.
+                  </li>
+              </ul>
+              <table border="0">
+                  <thead>
+                      <tr>
+                          <th>Title</th>
+                          <th></th>
+                          <th>URL</th>
+                          <th></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>
+                              <input id="input-edit-profile-link-01-title" value="YouTube" /><br />
+                          </td>
+                          <td>→</td>
+                          <td>
+                              <input id="input-edit-profile-link-01-url" value="https://youtu.be/Q_YwajWURu8?si=Hzte-6uQ-rWcVFnw" /><br />
+                          </td>
+                          <td>
+                              <a href="#">Remove</a>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <button type="button">Add another link</button><br/>
+              <button type="button">Cancel</button>
+              <button type="submit">Save Profile</button><br/>
+              <button type="button">Edit Profile</button>
+              <button type="submit">Cancel Editing</button><br/>
+            </form>
+          </td>
+        </tr>
+      </table>
+  </body>
+</html>
