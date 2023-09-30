@@ -1,0 +1,103 @@
+.kb-flex-row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/*
+====================================================================================================
+SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDE
+====================================================================================================
+*/
+
+.kb-sidebar {
+  height: 100%;
+  width: 85px;
+  left: 0;
+  top: 0;
+  text-align: center;
+  background-color: black;
+}
+
+.kb-sidebar div {
+  font-size: 13px;
+  display: block;
+}
+
+.kb-sidebar a {
+  text-decoration: none;
+}
+
+.kb-sidebar i {
+  margin: 5px;
+}
+
+.kb-sidebar-text {
+  padding-bottom: 5px;
+}
+
+.kb-sidebar > .kb-sidebar-logo {
+  background-color: black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.kb-sidebar .kb-sidebar-account {
+  color: gray;
+}
+
+.kb-sidebar .kb-sidebar-icon {
+  color: red;
+}
+
+.kb-sidebar > .kb-sidebar-unselected {
+  background-color: black;
+}
+
+.kb-sidebar > .kb-sidebar-unselected .kb-sidebar-text {
+  color: white;
+}
+
+.kb-sidebar > .kb-sidebar-selected {
+  background-color: white;
+}
+
+.kb-sidebar > .kb-sidebar-selected .kb-sidebar-text {
+  color: red;
+}
+
+/*
+====================================================================================================
+HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HE
+====================================================================================================
+*/
+
+.kb-header {
+  margin: 15px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.kb-header-icon {
+  color: red;
+  vertical-align: middle;
+}
+
+.kb-header-text {
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+/*
+====================================================================================================
+SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU S
+====================================================================================================
+*/
+
+.kb-sub-menu {
+  margin: 30px;
+}
+
+.kb-body-text {
+  margin: 30px;
+  font-size: 18px;
+}
