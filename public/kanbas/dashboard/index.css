@@ -1,0 +1,24 @@
+.kb-body-text .card {
+    width: 270px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.kb-body-text a {
+    text-decoration: none;
+}
+
+.kb-body-text .card h6 {
+    margin-top: 4px;
+}
+
+.kb-body-text .card p {
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.kb-body-text .card i {
+    color: gray;
+    margin-left: 2px;
+}
