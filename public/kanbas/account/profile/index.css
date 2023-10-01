@@ -11,3 +11,16 @@ BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT 
 .kb-body-text-edit-button {
     float: right;
 }
+
+.kb-body-text-edit-links-ref {
+    font-weight: bold;
+    text-align: center;
+}
+
+.kb-body-text-edit-links-delete {
+    color: red;
+}
+
+.kb-body-text-edit-button-jump {
+    float: right;
+}
