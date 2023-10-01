@@ -1,15 +1,9 @@
-/*
-====================================================================================================
-BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT
-====================================================================================================
-*/
-
 .kb-body-text-picture {
     padding: 5px;
 }
 
 .kb-body-text-edit-button {
-    float: right;
+    /* float: right; */
 }
 
 .kb-body-text-edit-links-ref {
@@ -22,5 +16,5 @@ BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT BODY TEXT 
 }
 
 .kb-body-text-edit-button-jump {
-    float: right;
+    /* float: right; */
 }

@@ -1,0 +1,109 @@
+
+
+/*
+====================================================================================================
+FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED
+====================================================================================================
+*/
+
+.kb-feed {
+    padding: 8px;
+}
+
+.kb-feed-circle-icon {
+    color: lime;
+}
+
+.kb-feed-view-settings {
+    /* float: right; */
+}
+
+.kb-feed .btn {
+    margin: 1px;
+}
+
+.kb-feed ul {
+    margin: 8px;
+}
+
+.list-group > .list-group-item {
+    padding: 12px;
+}
+
+.list-group span, a {
+    font-size: 14px;
+}
+
+.list-group a {
+    text-decoration: none;
+    color: red;
+    margin-left: 10px;
+}
+
+.kb-feed-module-title > span {
+    margin-left: 8px;
+}
+
+.kb-feed-section-title > span {
+    margin-left: 8px;
+}
+
+.kb-feed-section-point > span {
+    margin-left: 40px;
+}
+
+.kb-feed-section-link > span {
+    margin-left: 10px;
+}
+
+.kb-feed-section-link > .kb-feed-section-link-icon {
+    margin-left: 8px;
+    color: green;
+}
+
+.kb-feed-section-link-exit {
+    margin-left: 4px;
+    color: red;
+}
+
+/*
+====================================================================================================
+ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC
+====================================================================================================
+*/
+
+.kb-etc {
+    padding: 8px;
+    padding-right: 28px;
+}
+
+.kb-etc-unpublish {
+    float: left;
+    width: 48%;
+    margin: 1px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+}
+
+.kb-etc-published {
+    width: 48%;
+    margin: 1px;
+    margin-left: 0px;
+    margin-bottom: 8px;
+}
+
+.kb-etc .d-grid > .btn {
+    text-align: left;
+}
+
+.kb-etc .d-grid > .btn > i {
+    margin-left: 5px;
+}
+
+.kb-etc .d-grid span {
+    font-size: 16px;
+}
+
+.kb-etc-header-line {
+    margin-top: 0px;
+}
