@@ -12,13 +12,13 @@ FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED 
     color: lime;
 }
 
-.kb-feed-view-settings {
-    /* float: right; */
-}
-
 .kb-feed .btn {
     margin: 1px;
 }
+
+/*
+NEWNENWENWENWNEWNEWNENWNEWNENWNEWNENWEWEWNENWENENNNWENWNENWNENWENWENWNEW
+*/
 
 .kb-feed ul {
     margin: 8px;
@@ -28,41 +28,70 @@ FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED 
     padding: 12px;
 }
 
-.list-group span, a {
-    font-size: 14px;
+.list-group > .kb-feed-assignment {
+    border-left-color: green;
+    border-left-width: 3px;
+}
+
+.list-group a {
+    font-size: 16px;
+    padding-left: 0px;
 }
 
 .list-group a {
     text-decoration: none;
-    color: red;
-    margin-left: 10px;
+    color: black;
 }
 
 .kb-feed-module-title > span {
     margin-left: 8px;
 }
 
-.kb-feed-section-title > span {
-    margin-left: 8px;
+.kb-feed-assignment > span {
+    margin-left: 15px;
 }
 
-.kb-feed-section-point > span {
-    margin-left: 40px;
+.kb-feed-section-title {
+    font-size: 16px;
 }
 
-.kb-feed-section-link > span {
-    margin-left: 10px;
+.kb-feed-entry-title {
+    font-size: 16px;
+    /* padding-left: 32px; */
 }
 
-.kb-feed-section-link > .kb-feed-section-link-icon {
-    margin-left: 8px;
+.kb-feed-link-title {
+    font-size: 16px;
+    color: red;
+}
+
+.kb-feed-assignment-description {
+    font-size: 14px;
+}
+
+.kb-feed-entry-icon-box {
+    padding-right: 0px;
+}
+
+.kb-feed-entry-icon-box > .fa-link {
     color: green;
 }
 
-.kb-feed-section-link-exit {
-    margin-left: 4px;
-    color: red;
+
+.kb-feed-assignment-status-box > .fa-circle-check {
+    padding-right: 30px;
+    color: green;
 }
+
+.kb-feed-assignment-status-box > .fa-circle-check {
+    padding-right: 30px;
+    color: green;
+}
+
+.kb-feed-assignment-status-box > .fa-ellipsis-vertical {
+    padding-right: 15px;
+}
+
 
 /*
 ====================================================================================================

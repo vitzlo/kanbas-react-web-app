@@ -13,13 +13,9 @@ FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED 
     color: lime;
 }
 
-.kb-feed-view-settings {
-    /* float: right; */
-}
-
 .kb-feed-search-box {
     width: 30px;
-  }
+}
 
 .kb-feed .btn {
     margin: 1px;
