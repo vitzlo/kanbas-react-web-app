@@ -2,242 +2,448 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Edit Assignment</title>
+    <title>Assignments</title>
+
+    <link href="../../index.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <link
+      href="../../../vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fea6b74a57.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <table border="0" width="100%">
-      <tr>
-        <td style="vertical-align: top">
-          <ul>
-            <li>
-              <a href="../../../kanbas/account/home.html">Account</a>
-            </li>
-            <li>
-              <a href="#">Dashboard</a>
-            </li>
-            <li>
-              <a href="../../../kanbas/courses/home.html">Courses</a>
-            </li>
-            <li>
-              <a href="#">Calendar</a>
-            </li>
-            <li>
-              <a href="#">Inbox</a>
-            </li>
-            <li>
-              <a href="#">History</a>
-            </li>
-            <li>
-              <a href="#">Studio</a>
-            </li>
-            <li>
-              <a href="#">Conmons</a>
-            </li>
-            <li>
-              <a href="#">Help</a>
-            </li>
-          </ul>
-        </td>
-        <td style="vertical-align: top">
-          <ul>
-            <li>
-              <a href="../../../kanbas/courses/home/home.html">Home</a>
-            </li>
-            <li>
-              <a href="#">Modules</a>
-            </li>
-            <li>
-              <a href="#">Piazza</a>
-            </li>
-            <li>
-              <a href="#">Zoom Meetings</a>
-            </li>
-            <li>
-              <a href="../../../kanbas/courses/assignments/index.html"
-                >Assignments</a
-              >
-            </li>
-            <li>
-              <a href="#">Quizzes</a>
-            </li>
-            <li>
-              <a href="../../../kanbas/courses/grades/grades.html">Grades</a>
-            </li>
-            <li>
-              <a href="#">People</a>
-            </li>
-            <li>
-              <a href="#">Panopto Video</a>
-            </li>
-            <li>
-              <a href="#">Discussions</a>
-            </li>
-            <li>
-              <a href="#">Announcements</a>
-            </li>
-            <li>
-              <a href="#">Pages</a>
-            </li>
-            <li>
-              <a href="#">Files</a>
-            </li>
-            <li>
-              <a href="#">Rubrics</a>
-            </li>
-            <li>
-              <a href="#">Outcomes</a>
-            </li>
-            <li>
-              <a href="#">Collaborations</a>
-            </li>
-            <li>
-              <a href="#">Syllabus</a>
-            </li>
-            <li>
-              <a href="#">Settings</a>
-            </li>
-          </ul>
-        </td>
-        <td style="vertical-align: top">
-          <select id="select-edit-assignment-grader">
-            <option value="SPEEDGRADER">SpeedGrader</option>
-          </select>
-          <hr />
+    <div class="kb-sidebar position-fixed">
+      <div class="kb-sidebar-logo">
+        <a href="#">
+          <img
+            src="../../../images/nu-n-motto.png"
+            width="60px"
+            height="48px"
+          />
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="../../../kanbas/account/profile/index.html">
+          <i class="fa fa-2x fa-user kb-sidebar-account"></i>
+          <div class="kb-sidebar-text">Account</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="../../../kanbas/dashboard/index.html">
+          <i class="fa fa-2x fa-gauge kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Dashboard</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-selected">
+        <a href="../../../kanbas/courses/home/index.html">
+          <i class="fa fa-2x fa-book kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Courses</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="#">
+          <i class="fa fa-2x fa-calendar-check kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Calendar</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="#">
+          <i class="fa fa-2x fa-inbox kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Inbox</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="#">
+          <i class="fa fa-2x fa-clock kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">History</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="#">
+          <i class="fa fa-2x fa-tv kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Studio</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="#">
+          <i class="fa fa-2x fa-arrow-right-from-bracket kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Commons</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="#">
+          <i class="fa fa-2x fa-question kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Help</div>
+        </a>
+      </div>
+    </div>
+    <div class="wd-flex-row-container">
+      <div class="kb-header kb-header-icon">
+        <i class="fa fa-2x fa-bars"></i>
+      </div>
+      <div class="kb-header wd-flex-grow-1">
+        <nav
+          style="--bs-breadcrumb-divider: '>'"
+          class="kb-header-text"
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">RAP2100.90210.202310</li>
+            <li class="breadcrumb-item">Assignments</li>
+            <li class="breadcrumb-item active" aria-current="page">A1 SETUP</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="kb-header wd-flex-grow-1">
+        <button type="button" class="btn btn-secondary float-end">
+          <i class="fa fa-1x fa-glasses"></i> Student View
+        </button>
+      </div>
+    </div>
+    <div class="wd-flex-row-container">
+      <div class="kb-header-line wd-flex-grow-1">
+        <hr />
+      </div>
+    </div>
+    <div class="wd-flex-row-container">
+      <div class="kb-sub-menu col-2 col-sm-2 d-none d-md-block">
+        <div class="kb-sub-menu-unselected">
+          <a href="../../../kanbas/courses/home/index.html">Home</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Modules</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Piazza</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Zoom Meetings</a>
+        </div>
+        <div class="kb-sub-menu-selected">
+          <a href="../../../kanbas/courses/assignments/index.html"
+            >Assignments</a
+          >
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Quizzes</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="../../../kanbas/courses/grades/index.html">Grades</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">People</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Panopto Video</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Discussions</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Announcements</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Pages</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Files</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Rubrics</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Outcomes</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Collaborations</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Syllabus</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Progress Reports (EAB Navigate)</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Settings</a>
+        </div>
+      </div>
+      <div class="kb-feed col-10 col-sm-10">
+        <div class="row">
+          <div class="col wd-flex-grow-1">
+            <div class="kb-assignments-published align-self-center float-end">
+              <i class="fa fa-1x fa-user fa-circle-check align-self-center"></i>
+              <span class="align-self-center">Published</span>
+              <button type="button" class="btn btn-secondary btn-sm">
+                <i class="fa fa-1x fa-user fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <hr style="margin-top: 0px" />
+        </div>
+        <div>
           <form
-            id="form-edit-assignment"
+            id="form-edit-profile"
             action="../../../kanbas/courses/assignments/index.html"
           >
-            <h2>Assignment Name</h2>
-            <input
-              id="input-edit-assignment-name"
-              value="A1 PRODUCTION"
-            /><br />
-            <br />
-            <textarea cols="22" rows="2">
-This is the assignment description.</textarea
-            ><br />
-            <br />
-            <label>Points</label><br />
-            <input id="input-edit-assignment-points" value="100" /><br />
-            <br />
-            <label>Assignment Group</label><br />
-            <select id="select-edit-assignment-group">
-              <option value="ASSIGNMENTS">ASSIGNMENTS</option></select
-            ><br />
-            <br />
-            <label>Display Grade as</label><br />
-            <select id="select-edit-assignment-display-grade">
-              <option value="PERCENTAGE">Percentage</option></select
-            ><br />
-            <br />
-            <label>Submission Type</label>
-            <br />
-            <select id="select-edit-assignment-submission-type">
-              <option value="ONLINE">Online</option></select
-            ><br />
-            <br />
-            <label>Online Entry Options</label><br />
-            <input
-              type="checkbox"
-              value="TEXT ENTRY"
-              name="check-edit-assignment-online-entry"
-              id="check-text-entry"
-            />
-            <label for="check-text-entry">Text Entry</label><br />
-            <input
-              type="checkbox"
-              value="WEBSITE URL"
-              name="check-edit-assignment-online-entry"
-              id="check-website-url"
-            />
-            <label for="check-text-website-url">Website URL</label><br />
-            <input
-              type="checkbox"
-              value="MEDIA RECORDINGS"
-              name="check-edit-assignment-online-entry"
-              id="check-media-recordings"
-            />
-            <label for="check-media-recordings">Media Recordings</label><br />
-            <input
-              type="checkbox"
-              value="STUDENT ANNOTATIONS"
-              name="check-edit-assignment-online-entry"
-              id="check-student-annotations"
-            />
-            <label for="check-student-annotations">Student Annotations</label
-            ><br />
-            <input
-              type="checkbox"
-              value="FILE UPLOADS"
-              name="check-edit-assignment-online-entry"
-              id="check-student-file-uploads"
-            />
-            <label for="check-edit-assignment-file-uploads">File Uploads</label
-            ><br />
-            <br />
-            <label>Submission Attempts</label><br />
-            <select id="select-edit-assignment-submission-attempts">
-              <option value="UNLIMITED">Unlimited</option></select
-            ><br />
-            <br />
-            <label>Plagiarism Review</label><br />
-            <select id="select-edit-assignment-plagiarism">
-              <option value="NONE">None</option></select
-            ><br />
-            <br />
-            <label>Group Assignment</label><br />
-            <input
-              type="checkbox"
-              value="GROUP ASSIGNMENT"
-              name="check-edit-assignment-group-assignment"
-              id="check-group-assignment"
-            />
-            <label for="check-text-entry">This is a group assignment</label
-            ><br />
-            <br />
-            <label>Peer Reviews</label><br />
-            <input
-              type="checkbox"
-              value="PEER REVIEWS"
-              name="check-edit-assignment-peer-reviews"
-              id="check-peer-reviews"
-            />
-            <label for="check-text-entry">Require Peer Reviews</label><br />
-            <br />
-            Assign
-            <br />
-            <label>Assign to</label><br />
-            <input id="input-edit-assignment-assign-to" value="Everyone" />
-            <br />
-            <br />
-            <label>Due</label><br />
-            <input
-              type="date"
-              id="input-edit-assignment-due"
-              value="2021-01-01"
-            />
-            <br />
-            <br />
-            <label>Available from</label><br />
-            <input
-              type="date"
-              id="input-edit-assignment-available-from"
-              value="2021-01-01"
-            /><br />
-            <br />
-            <label>Until</label><br />
-            <input
-              type="date"
-              id="input-edit-assignment-until"
-              value="2021-01-01"
-            /><br />
-            <br />
-            <button type="submit">Cancel</button>
-            <button type="submit">Save</button>
-            <br />
+            <div class="mb-3">
+              <label for="input-edit-assignment-name" class="form-label"
+                >Assignment Name:</label
+              >
+              <input
+                type="text"
+                class="form-control w-80"
+                id="input-edit-assignment-name"
+                value="A1 SETUP"
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="input-edit-assignment-description"
+                rows="3"
+              >
+This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.
+            </textarea
+              >
+            </div>
+            <!--Edit row-->
+            <div class="row kb-edit-chart">
+              <div class="col-3 kb-edit-chart-label">
+                <label
+                  for="input-edit-assignment-points"
+                  class="form-label float-end"
+                  >Points</label
+                >
+              </div>
+              <div class="col-7">
+                <div class="mb-3">
+                  <input
+                    type="number"
+                    class="form-control w-80"
+                    id="input-edit-assignment-points"
+                    value="100"
+                  />
+                </div>
+              </div>
+              <div class="col-2"></div>
+            </div>
+            <!--Edit row-->
+            <div class="row kb-edit-chart">
+              <div class="col-3 kb-edit-chart-label">
+                <label
+                  for="input-edit-assignment-group"
+                  class="form-label float-end"
+                  >Assignment Group</label
+                >
+              </div>
+              <div class="col-7">
+                <select class="form-select">
+                  <option selected>ASSIGNMENTS</option>
+                </select>
+              </div>
+              <div class="col-2"></div>
+            </div>
+            <!--Edit row-->
+            <div class="row kb-edit-chart">
+              <div class="col-3 kb-edit-chart-label">
+                <label
+                  for="input-edit-assignment-group"
+                  class="form-label float-end"
+                  >Display Grade as</label
+                >
+              </div>
+              <div class="col-7">
+                <select class="form-select">
+                  <option selected>Percentage</option>
+                </select>
+              </div>
+              <div class="col-2"></div>
+            </div>
+            <!--Edit row-->
+            <div class="row kb-edit-chart">
+              <div class="col-3 kb-edit-chart-label"></div>
+              <div class="col-7">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="input-edit-assignment-counted"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="input-edit-assignment-counted"
+                  >
+                    Do not count this assignment towards the final grade
+                  </label>
+                </div>
+              </div>
+              <div class="col-2"></div>
+            </div>
+            <!--Edit row-->
+            <div class="row kb-edit-chart">
+              <div class="col-3 kb-edit-chart-label">Submission Type</div>
+              <div class="col-7">
+                <div class="card p-3 kb-edit-box">
+                  <select class="form-select">
+                    <option selected>Online</option>
+                  </select>
+                  <b>Online Entry Options</b>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="input-edit-assignment-text-entry"
+                      checked
+                    />
+                    <label
+                      class="form-check-label"
+                      for="input-edit-assignment-text-entry"
+                      >Text Entry
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="input-edit-assignment-website-url"
+                      checked
+                    />
+                    <label
+                      class="form-check-label"
+                      for="input-edit-assignment-website-url"
+                      >Website URL
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="input-edit-assignment-media"
+                      checked
+                    />
+                    <label
+                      class="form-check-label"
+                      for="input-edit-assignment-media"
+                      >Media Recordings
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="input-edit-assignment-annotation"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="input-edit-assignment-annotation"
+                      >Student Annotation
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="input-edit-assignment-file-uploads"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="input-edit-assignment-file-uploads"
+                      >File Uploads
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2"></div>
+            </div>
+            <!--Edit row-->
+            <div class="row kb-edit-chart">
+              <div class="col-3 kb-edit-chart-label">Submission Type</div>
+              <div class="col-7">
+                <div class="card p-3 kb-edit-box" style="padding: 0px!important;">
+                  <div class="card-body">
+                    <b>Assign to</b>
+                    <div class="card p-3">Everyone</div>
+                    <b>Due</b>
+                    <input
+                      type="date"
+                      class="form-control mr-sm-2"
+                      id="input-edit-assign-due"
+                      value="Sep 18, 2023, 11:59 PM"
+                    />
+                    <div class="row" style="margin-top: 8px;">
+                      <div class="col-sm-6">
+                        <label for="input-edit-assign-from" class="form-label"
+                          ><b>Available from</b></label
+                        >
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="input-edit-assign-from"
+                        />
+                      </div>
+                      <div class="col-sm-6">
+                        <label for="input-edit-assign-until" class="form-label"
+                          ><b>Until</b></label
+                        >
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="input-edit-assign-until"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer" style="text-align:center;">
+                    + Add
+                  </div>
+                </div>
+              </div>
+              <div class="col-2"></div>
+            </div>
+            <hr/>
+            <div class="wd-flex-row-container">
+              <div class="wd-flex-grow-1">
+                <div class="form-check float-start">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="input-edit-assignment-changed"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="input-edit-assignment-changed"
+                  >
+                    Notify users that this content has changed
+                  </label>
+                </div>
+              </div>
+              <div class="wd-flex-grow-1">
+                <div class="float-end">
+                  <button type="submit" class="btn btn-secondary">
+                    Cancel
+                  </button>
+                  <button type="submit" class="btn btn-danger">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
           </form>
-        </td>
-      </tr>
-    </table>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

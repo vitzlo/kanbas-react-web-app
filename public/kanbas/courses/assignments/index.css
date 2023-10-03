@@ -78,3 +78,41 @@ FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED FEED 
 .kb-feed-assignment-status-box > .fa-ellipsis-vertical {
     padding-right: 15px;
 }
+
+/**/
+
+.kb-assignments-published span {
+    color: green;
+    padding-bottom: 20px;
+}
+
+.kb-assignments-published > i {
+    color: green;
+}
+
+.kb-assignments-published .btn {
+    margin-left: 12px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.kb-edit-chart {
+    margin-bottom: 8px;
+}
+
+.kb-edit-chart > .kb-edit-chart-label {
+    text-align: right;
+}
+
+.kb-edit-chart .form-select {
+    margin-bottom: 12px;
+}
+
+.kb-edit-chart .form-check, b {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.col-7 > .card {
+    margin-bottom: 16px;
+}

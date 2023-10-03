@@ -99,6 +99,14 @@ HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEA
   margin-right: 20px;
 }
 
+.breadcrumb > .breadcrumb-item {
+  color: red;
+}
+
+.breadcrumb > .active {
+  color: black;
+}
+
 /*
 ====================================================================================================
 SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU S
