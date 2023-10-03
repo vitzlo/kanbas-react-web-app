@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grades</title>
+
+    <link href="../../index.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <link
+      href="../../../vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fea6b74a57.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="kb-sidebar position-fixed">
+      <div class="kb-sidebar-logo">
+        <a href="#">
+          <img
+            src="../../../images/nu-n-motto.png"
+            width="60px"
+            height="48px"
+          />
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="../../../kanbas/account/profile/index.html">
+          <i class="fa fa-2x fa-user kb-sidebar-account"></i>
+          <div class="kb-sidebar-text">Account</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="../../../kanbas/dashboard/index.html">
+          <i class="fa fa-2x fa-gauge kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Dashboard</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-selected">
+        <a href="../../../kanbas/courses/home/index.html">
+          <i class="fa fa-2x fa-book kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Courses</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="#">
+          <i class="fa fa-2x fa-calendar-check kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Calendar</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="#">
+          <i class="fa fa-2x fa-inbox kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Inbox</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="#">
+          <i class="fa fa-2x fa-clock kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">History</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="#">
+          <i class="fa fa-2x fa-tv kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Studio</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="#">
+          <i class="fa fa-2x fa-arrow-right-from-bracket kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Commons</div>
+        </a>
+      </div>
+      <div class="kb-sidebar-unselected">
+        <a href="#">
+          <i class="fa fa-2x fa-question kb-sidebar-icon"></i>
+          <div class="kb-sidebar-text">Help</div>
+        </a>
+      </div>
+    </div>
+    <div class="wd-flex-row-container">
+      <div class="kb-header kb-header-icon">
+        <i class="fa fa-2x fa-bars"></i>
+      </div>
+      <div class="kb-header wd-flex-grow-1">
+        <nav
+          style="--bs-breadcrumb-divider: '>'"
+          class="kb-header-text"
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">RAP2100.90210.202310</li>
+            <li class="breadcrumb-item active" aria-current="page">Grades</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <div class="wd-flex-row-container">
+      <div class="kb-header-line wd-flex-grow-1">
+        <hr />
+      </div>
+    </div>
+    <div class="wd-flex-row-container">
+      <div class="kb-sub-menu col-2 col-sm-2 d-none d-md-block">
+        <div class="kb-sub-menu-unselected">
+          <a href="../../../kanbas/courses/home/index.html">Home</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Modules</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Piazza</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Zoom Meetings</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="../../../kanbas/courses/assignments/index.html"
+            >Assignments</a
+          >
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Quizzes</a>
+        </div>
+        <div class="kb-sub-menu-selected">
+          <a href="../../../kanbas/courses/grades/index.html">Grades</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">People</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Panopto Video</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Discussions</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Announcements</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Pages</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Files</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Rubrics</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Outcomes</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Collaborations</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Syllabus</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Progress Reports (EAB Navigate)</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+          <a href="#">Settings</a>
+        </div>
+      </div>
+      <div class="kb-feed col-10 col-sm-10">
+        <button type="button" class="btn btn-secondary float-end">
+          <i class="fa fa-1x fa-user fa-gear"></i>
+        </button>
+        <button
+          class="btn btn-secondary dropdown-toggle float-end"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-file-export kb-feed-circle-icon"></i>
+          Export
+        </button>
+        <button type="button" class="btn btn-secondary float-end">
+          <i class="fa fa-1x fa-user fa-file-import"></i> Import
+        </button>
+        <br />
+        <br />
+        <form>
+          <div class="form-group row">
+            <div class="col-6">
+              <label for="input-grades-student-name" class="form-label"
+                ><b>Student Names</b></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="input-grades-student-name"
+                placeholder="Ⴓ Search Students"
+              />
+            </div>
+            <div class="col-6">
+              <label for="input-grades-assignment-name" class="form-label"
+                ><b>Assignment Names</b></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="input-grades-assignment-name"
+                placeholder="Ⴓ Search Assignments"
+              />
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            style="margin-top: 8px; margin-bottom: 8px"
+          >
+            <i class="fa fa-1x fa-user fa-filter"></i> Apply Filters
+          </button>
+          <table class="table table-bordered table-striped align-middle">
+            <thead style="font-size: 14px">
+              <tr>
+                <th scope="col" style="vertical-align: middle; width: 20%">
+                  Student Name
+                </th>
+                <th
+                  scope="col"
+                  style="font-weight: normal; text-align: center; width: 20%"
+                >
+                  <div>A1 SETUP</div>
+                  <div>Out of 100</div>
+                </th>
+                <th
+                  scope="col"
+                  style="font-weight: normal; text-align: center; width: 20%"
+                >
+                  <div>A2 HTML</div>
+                  <div>Out of 100</div>
+                </th>
+                <th
+                  scope="col"
+                  style="font-weight: normal; text-align: center; width: 20%"
+                >
+                  <div>A3 CSS</div>
+                  <div>Out of 100</div>
+                </th>
+                <th
+                  scope="col"
+                  style="font-weight: normal; text-align: center; width: 20%"
+                >
+                  <div>A4 BOOTSTRAP</div>
+                  <div>Out of 100</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: red">Doxa Asibey</td>
+                <td style="text-align: center">100%</td>
+                <td style="text-align: center">100%</td>
+                <td style="text-align: center">89.59%</td>
+                <td style="text-align: center">98.65%</td>
+              </tr>
+              <tr>
+                <td style="color: red">Thuy Tien Bui</td>
+                <td style="text-align: center">100%</td>
+                <td style="text-align: center">100%</td>
+                <td style="text-align: center">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-grades-replace-grade"
+                  />
+                </td>
+                <td style="text-align: center">100%</td>
+              </tr>
+              <tr>
+                <td style="color: red">Yetong Chen</td>
+                <td style="text-align: center">100%</td>
+                <td style="text-align: center">97%</td>
+                <td style="text-align: center">100%</td>
+                <td style="text-align: center">100%</td>
+              </tr>
+              <tr>
+                <td style="color: red">Zhenyu Chen</td>
+                <td style="text-align: center">100%</td>
+                <td style="text-align: center">100%</td>
+                <td style="text-align: center">98.64%</td>
+                <td style="text-align: center">100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
