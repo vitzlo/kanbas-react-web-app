@@ -134,3 +134,13 @@ ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC 
 .kb-etc-header-line {
     margin-top: 0px;
 }
+
+.kb-etc-bottom-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.kb-etc-bottom a {
+    color: red;
+    text-decoration: none;
+}

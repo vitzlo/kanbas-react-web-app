@@ -117,6 +117,12 @@ SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU SUB-MENU
   width: 195px;
 }
 
+.kb-sub-menu-title {
+  font-style: italic;
+  font-size: 10px;
+  color: gray;
+}
+
 .kb-sub-menu a {
   text-decoration: none;
   font-size: 15px;
