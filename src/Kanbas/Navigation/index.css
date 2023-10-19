@@ -1,0 +1,54 @@
+.kb-sidebar {
+  height: 100%;
+  width: 85px;
+  left: 0;
+  top: 0;
+  text-align: center;
+  background-color: black;
+}
+
+.kb-sidebar div {
+  font-size: 13px;
+  display: block;
+}
+
+.kb-sidebar img {
+  margin: 5px;
+}
+
+.kb-sidebar-text {
+  padding-bottom: 5px;
+}
+
+.kb-sidebar-logo {
+  background-color: black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.kb-sidebar-icon {
+  color: red;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.kb-sidebar-account-icon {
+    color: gray;
+}
+
+.kb-sidebar-unselected {
+  background-color: black;
+}
+
+.kb-sidebar-selected {
+  background-color: white;
+}
+
+.kb-sidebar-unselected .kb-sidebar-text {
+  color: white;
+}
+
+.kb-sidebar-selected .kb-sidebar-text {
+  color: red;
+}

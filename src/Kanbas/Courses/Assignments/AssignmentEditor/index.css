@@ -1,0 +1,9 @@
+.row {
+    align-items: right;
+}
+
+.kb-assignment-edit-text-published {
+    color: green;
+    text-align: right;
+    flex-grow: 0;
+}

@@ -1,0 +1,16 @@
+.kb-home-status {
+    margin-top: 20px;
+}
+
+.kb-home-status a {
+    color: red;
+    text-decoration: none;
+}
+
+.kb-home-status-todo-item {
+    padding-bottom: 8px;
+}
+
+.kb-home-status-todo-item-info {
+    color: gray;
+}

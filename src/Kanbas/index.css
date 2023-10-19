@@ -1,0 +1,120 @@
+.wd-flex-grow-1 {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+/*all non-sidebar outer content needs to be offset and padded*/
+.kb-top-flex-content-container,
+.kb-sub-flex-content-container,
+.kb-horizontal-line {
+  margin-left: 85px;
+}
+
+.kb-top-flex-content-container,
+.kb-sub-flex-content-container,
+.kb-horizontal-line,
+.kb-in-flex-content-container {
+    padding: 20px; /*GLOBAL TUNER*/
+}
+
+.kb-in-flex-content-container-col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.kb-top-flex-content-container {
+  padding-bottom: 10px;
+}
+
+.kb-sub-flex-content-container {
+  padding-top: 10px;
+}
+
+.kb-top-flex-content-container,
+.kb-sub-flex-content-container,
+.kb-in-flex-content-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.kb-horizontal-line {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.kb-link {
+  text-decoration: none;
+  color: red;
+}
+
+/*
+HEADER
+*/
+
+.kb-header {
+}
+
+.kb-header-icon {
+  color: red;
+  vertical-align: middle;
+  width: 0px;
+}
+
+.kb-header-section {
+  margin-left: 30px;
+  vertical-align: middle;
+  font-size: 1.25em;
+}
+
+.kb-breadcrumb-inactive {
+  color: red;
+}
+
+.kb-breadcrumb-active {
+  color: black;
+}
+
+/*
+SUB MENU
+*/
+
+.kb-sub-menu {
+  width: 195px;
+}
+
+.kb-sub-menu-title {
+  font-style: italic;
+  font-size: 10px;
+  color: gray;
+}
+
+.kb-sub-menu a {
+  text-decoration: none;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.kb-sub-menu div {
+  padding: 8px;
+  padding-left: 0px;
+}
+
+.kb-sub-menu-selected {
+  border-left-color: black;
+  border-left-width: 2px;
+  border-left-style: solid;
+}
+
+.kb-sub-menu-selected {
+  color: black;
+}
+
+.kb-sub-menu-unselected {
+  color: red;
+}
+
+/*BODY*/
+
+.kb-body-text {
+  font-size: 15px;
+}

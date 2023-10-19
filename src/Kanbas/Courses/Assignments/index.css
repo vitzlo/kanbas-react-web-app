@@ -1,0 +1,31 @@
+.kb-assignment-feed {
+  /* padding: 8px;
+  padding-right: 28px; */
+}
+
+.kb-assignment-feed-search-box {
+  width: 30px;
+}
+
+.list-group-item-secondary > span {
+  font-weight: bold;
+}
+
+.kb-feed-assignment-icon-box {
+    width: 15px;
+    vertical-align: middle;
+}
+
+.kb-feed-assignment-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.kb-feed-assignment-description {
+    font-size: 14px;
+}
+
+.kb-feed-assignment-description-red {
+    color: red;
+}

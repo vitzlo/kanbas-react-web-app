@@ -1,0 +1,12 @@
+.btn {
+  margin: 4px;
+  font-size: 20px;
+}
+
+.list-group {
+    padding: 8px;
+}
+
+.list-group-item-secondary > span {
+  font-weight: bold;
+}
