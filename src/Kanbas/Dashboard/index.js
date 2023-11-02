@@ -1,3 +1,4 @@
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import db from "../Database";
 import { TfiWrite } from "react-icons/tfi";
@@ -5,7 +6,7 @@ import "./index.css";
 import "../index.css";
 
 function Dashboard() {
-  const courses = db.courses;
+  const [courses, setCourses] = useState(db.courses);
   return (
     <div>
       <div className="kb-top-flex-content-container">
