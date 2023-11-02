@@ -10,3 +10,9 @@
 .list-group-item-secondary > span {
   font-weight: bold;
 }
+
+.form-input-field {
+  width: 70% !important;
+  display: inline !important;
+  margin: 4px;
+}

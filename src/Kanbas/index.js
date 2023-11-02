@@ -6,6 +6,8 @@ import "../index.css";
 import Courses from "./Courses";
 import db from "./Database";
 import { useState } from "react";
+import store from "./store";
+import { Provider } from "react-redux";
 
 // d-flex was here, was messing with the other containers
 function Kanbas() {
@@ -17,7 +19,10 @@ function Kanbas() {
     endDate: "2023-12-15",
   });
   const addNewCourse = () => {
-    setCourses([...courses, { ...course, _id: new Date().getTime().toString()}]);
+    setCourses([
+      ...courses,
+      { ...course, _id: new Date().getTime().toString() },
+    ]);
     console.log(course);
     console.log(courses);
   };
@@ -29,32 +34,34 @@ function Kanbas() {
   };
 
   return (
-    <div>
-      <KanbasNavigation />
+    <Provider store={store}>
       <div>
-        <Routes>
-          <Route path="/" element={<Navigate to="Dashboard" />} />
-          <Route path="/Account" element={<h1>Account</h1>} />
-          <Route
-            path="/Dashboard"
-            element={
-              <Dashboard
-                courses={courses}
-                course={course}
-                setCourse={setCourse}
-                addNewCourse={addNewCourse}
-                deleteCourse={deleteCourse}
-                updateCourse={updateCourse}
-              />
-            }
-          />
-          <Route
-            path="/Courses/:courseId/*"
-            element={<Courses courses={courses} />}
-          />
-        </Routes>
+        <KanbasNavigation />
+        <div>
+          <Routes>
+            <Route path="/" element={<Navigate to="Dashboard" />} />
+            <Route path="/Account" element={<h1>Account</h1>} />
+            <Route
+              path="/Dashboard"
+              element={
+                <Dashboard
+                  courses={courses}
+                  course={course}
+                  setCourse={setCourse}
+                  addNewCourse={addNewCourse}
+                  deleteCourse={deleteCourse}
+                  updateCourse={updateCourse}
+                />
+              }
+            />
+            <Route
+              path="/Courses/:courseId/*"
+              element={<Courses courses={courses} />}
+            />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Provider>
   );
 }
 export default Kanbas;
