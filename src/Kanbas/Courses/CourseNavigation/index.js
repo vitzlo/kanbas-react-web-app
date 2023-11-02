@@ -67,10 +67,9 @@ function CourseNavigation() {
   ];
   const { courseId } = useParams();
   const { pathname } = useLocation();
-  const course = db.courses.find((course) => course._id === courseId);
   return (
     <div>
-      <div class="kb-sub-menu-title">{course.number} Fall 2023 Semester</div>
+      <div className="kb-sub-menu-title">Fall 2023 Semester</div>
       {links.map(({ label, link }, index) => (
         <div>
           <Link

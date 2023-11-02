@@ -17,3 +17,15 @@ a {
     font-size: 12px;
     margin-bottom: 2px;
 }
+
+.form-input-field {
+    width: 70% !important;
+    display: inline !important;
+    margin: 4px;
+}
+
+.form-name-text {
+    color: black;
+    font-size: 28px;
+    vertical-align: middle;
+}

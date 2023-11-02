@@ -15,13 +15,11 @@ function ModuleList() {
         .map((module, index) => (
           <ul className="list-group">
             <li
-              key={index}
               className="list-group-item list-group-item-secondary"
             >
               <span>{module.name}</span>
             </li>
             <li
-              key={index}
               className="list-group-item"
             >
               <span>{module.description}</span>

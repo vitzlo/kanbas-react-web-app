@@ -1,12 +1,17 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import db from "../Database";
-import { TfiWrite } from "react-icons/tfi";
 import "./index.css";
 import "../index.css";
 
-function Dashboard() {
-  const [courses, setCourses] = useState(db.courses);
+function Dashboard({
+  courses,
+  course,
+  setCourse,
+  addNewCourse,
+  deleteCourse,
+  updateCourse,
+}) {
   return (
     <div>
       <div className="kb-top-flex-content-container">
@@ -16,34 +21,105 @@ function Dashboard() {
         </div>
       </div>
       <div className="kb-sub-flex-content-container">
-        <div className="kb-body-text wd-flex-grow-1">
+        <div className="kb-feed col-6 col-sm-6">
           <h5>Published Courses ({courses.length})</h5>
           <hr />
-          <div className="d-flex flex-wrap">
+          <ul className="list-group">
+            <div className="list-group-item">
+              <input
+                type="text"
+                className="form-control form-input-field"
+                placeholder="New Course"
+                value={course.name}
+                onChange={(e) => setCourse({ ...course, name: e.target.value })}
+              />
+              <input
+                type="text"
+                className="form-control form-input-field"
+                placeholder="Course #"
+                value={course.number}
+                onChange={(e) =>
+                  setCourse({ ...course, number: e.target.value })
+                }
+              />
+              <input
+                type="text"
+                className="form-control form-input-field"
+                placeholder="Course State Date"
+                value={course.startDate}
+                onChange={(e) =>
+                  setCourse({ ...course, startDate: e.target.value })
+                }
+              />
+              <input
+                type="text"
+                className="form-control form-input-field"
+                placeholder="Course End Date"
+                value={course.endDate}
+                onChange={(e) =>
+                  setCourse({ ...course, endDate: e.target.value })
+                }
+              />
+              <div className="col float-end">
+                <button
+                  onClick={updateCourse}
+                  type="submit"
+                  className="btn btn-primary mb-1"
+                >
+                  Update
+                </button>
+              </div>
+              <div className="col float-end">
+                <button
+                  onClick={addNewCourse}
+                  type="submit"
+                  className="btn btn-success mb-1"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </ul>
+          <ul className="list-group">
             {courses.map((course) => (
-              <div className="card kb-dashboard-card">
-                <Link key={course._id} to={`/Kanbas/Courses/${course._id}`}>
-                  <img
-                    src="/Images/wheezy-banner.png"
-                    alt={course.name}
-                    className="card-img-top"
-                  />
-                  <h6 className="card-title">
-                    {course.number} {course.name}
-                  </h6>
-                  <p className="card-text">{course.number}</p>
-                  <p className="card-text">
-                    {course.startDate} {course.endDate}
-                  </p>
-                  <TfiWrite />
+              <div className="list-group-item">
+                <Link
+                  key={course._id}
+                  to={`/Kanbas/Courses/${course._id}`}
+                  className="form-name-text"
+                >
+                  {course.name}
                 </Link>
+                <div className="col float-end">
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      deleteCourse(course._id);
+                    }}
+                    type="submit"
+                    className="btn btn-danger mb-1"
+                  >
+                    Delete
+                  </button>
+                </div>
+                <div className="col float-end">
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setCourse(course);
+                    }}
+                    type="submit"
+                    className="btn btn-warning mb-1"
+                  >
+                    Edit
+                  </button>
+                </div>
               </div>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </div>
-
   );
 }
 export default Dashboard;

@@ -57,8 +57,8 @@ function KanbasNavigation() {
   const { pathname } = useLocation();
 
   return (
-    <div class="kb-sidebar position-fixed">
-      <div class="kb-sidebar-logo">
+    <div className="kb-sidebar position-fixed">
+      <div className="kb-sidebar-logo">
         <img
           src="../../../Images/nu-n-motto.png"
           width="60px"

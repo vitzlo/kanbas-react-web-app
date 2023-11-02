@@ -12,10 +12,10 @@ import Home from "./Home";
 import Assignments from "./Assignments"
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 
-function Courses() {
+function Courses({courses}) {
   const { courseId } = useParams();
   const { pathname } = useLocation();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   const page = pathname.slice(pathname.lastIndexOf("/") + 1, pathname.length);
 
   return (
@@ -63,12 +63,6 @@ function Courses() {
             <Route path="Grades" element={<h1>Grades</h1>} />
           </Routes>
         </div>
-        {/* <div class="kb-feed col-12 col-sm-12 col-md-10 col-lg-7">
-          <h1>Home</h1>
-        </div>
-        <div class="kb-etc col-3 col-sm-3 d-none d-lg-block">
-          <h1>r Simpson</h1>
-        </div> */}
       </div>
     </div>
   );
