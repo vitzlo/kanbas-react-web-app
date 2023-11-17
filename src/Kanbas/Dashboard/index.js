@@ -81,8 +81,8 @@ function Dashboard({
             </div>
           </ul>
           <ul className="list-group">
-            {courses.map((course) => (
-              <div className="list-group-item">
+            {courses.map((course, index) => (
+              <div className="list-group-item" key={index}>
                 <Link
                   key={course._id}
                   to={`/Kanbas/Courses/${course._id}`}
@@ -94,7 +94,7 @@ function Dashboard({
                   <button
                     onClick={(e) => {
                       e.preventDefault();
-                      deleteCourse(course._id);
+                      deleteCourse(course);
                     }}
                     type="submit"
                     className="btn btn-danger mb-1"

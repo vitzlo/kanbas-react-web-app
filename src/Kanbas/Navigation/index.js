@@ -73,6 +73,7 @@ function KanbasNavigation() {
               ? "kb-sidebar-selected"
               : "kb-sidebar-unselected"
           }`}
+          key={index}
         >
           <Link
             key={index}
