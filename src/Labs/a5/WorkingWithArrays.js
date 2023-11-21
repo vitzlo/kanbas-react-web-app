@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 function WorkingWithArrays() {
+  //const API = "https://a5--radiant-kulfi-63b9ed.netlify.app/#/Labs/a5/todos";
+  const API = "http://localhost:4000/a5/todos";
+
   const [todo, setTodo] = useState({
     id: 1,
     title: "NodeJS Assignment",
@@ -54,9 +57,6 @@ function WorkingWithArrays() {
   useEffect(() => {
     fetchTodos();
   }, []);
-
-  const API = "https://a5--radiant-kulfi-63b9ed.netlify.app/#/Labs/a5/todos";
-  // const API = "http://localhost:4000/a5/todos";
 
   return (
     <div>

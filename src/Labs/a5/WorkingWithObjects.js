@@ -10,8 +10,8 @@ function WorkingWithObjects() {
     completed: false,
     score: 0,
   });
-  // const URL = "http://localhost:4000/a5/assignment";
-  const URL = "https://a5--radiant-kulfi-63b9ed.netlify.app/#/Labs/a5/assignment";
+  const URL = "http://localhost:4000/a5/assignment";
+  //const URL = "https://a5--radiant-kulfi-63b9ed.netlify.app/#/Labs/a5/assignment";
   const fetchAssignment = async () => {
     const response = await axios.get(`${URL}`);
     setAssignment(response.data);
