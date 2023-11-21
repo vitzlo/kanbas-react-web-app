@@ -10,8 +10,12 @@ function WorkingWithObjects() {
     completed: false,
     score: 0,
   });
-  const URL = "http://localhost:4000/a5/assignment";
+  //const URL = "http://localhost:4000/a5/assignment";
   //const URL = "https://a5--radiant-kulfi-63b9ed.netlify.app/#/Labs/a5/assignment";
+  // const API_BASE = process.env.REACT_APP_API_BASE;
+  const API_BASE = "https://kanbas-node-server-app-pivn.onrender.com/a5";
+  const URL = `${API_BASE}/assignment`;
+
   const fetchAssignment = async () => {
     const response = await axios.get(`${URL}`);
     setAssignment(response.data);
