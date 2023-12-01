@@ -3,9 +3,9 @@ import EncodingParametersInURLs from "./EncodingParametersInURLs";
 import WorkingWithObjects from "./WorkingWithObjects";
 
 function Assignment5() {
-  // const URL = "http://localhost:4000/a5/welcome";
+  const API_BASE = "http://localhost:4000/a5";
   // const URL = "https://a5--radiant-kulfi-63b9ed.netlify.app/#/Labs/a5"
-  const API_BASE = "https://kanbas-node-server-app-pivn.onrender.com/a5";
+  // const API_BASE = "https://kanbas-node-server-app-pivn.onrender.com/a5";
   // const API_BASE = process.env.REACT_APP_API_BASE;
   // console.log(API_BASE);
   const URL = `${API_BASE}/welcome`;

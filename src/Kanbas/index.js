@@ -8,12 +8,16 @@ import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
+import Signin from "./users/signin";
+import Account from "./Account";
+import UserTable from "./users/table";
+import Signup from "./users/signup";
 
 // d-flex was here, was messing with the other containers
 function Kanbas() {
   const [courses, setCourses] = useState([]);
-  // const URL = "http://localhost:4000/api/courses";
-  const API_BASE = "https://kanbas-node-server-app-pivn.onrender.com/api";
+  const API_BASE = "http://localhost:4000/api";
+  // const API_BASE = "https://kanbas-node-server-app-pivn.onrender.com/api";
   // const API_BASE = process.env.REACT_APP_API_BASE;
   const URL = `${API_BASE}/courses`;
   const findAllCourses = async () => {
@@ -36,17 +40,11 @@ function Kanbas() {
     setCourse({ name: "" });
   };
   const deleteCourse = async (course) => {
-    await axios.delete(
-      `${URL}/${course._id}`
-    );
-    setCourses(courses.filter(
-      (c) => c._id !== course._id));
+    await axios.delete(`${URL}/${course._id}`);
+    setCourses(courses.filter((c) => c._id !== course._id));
   };
   const updateCourse = async () => {
-    const response = await axios.put(
-      `${URL}/${course._id}`,
-      course
-    );
+    const response = await axios.put(`${URL}/${course._id}`, course);
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
@@ -65,7 +63,12 @@ function Kanbas() {
         <div>
           <Routes>
             <Route path="/" element={<Navigate to="Dashboard" />} />
-            <Route path="/Account" element={<h1>Account</h1>} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/admin/users" element={<UserTable />} />
+
+            <Route path="/Account" element={<Account />} />
+            <Route path="/Account/:id" element={<Account />} />
             <Route
               path="/Dashboard"
               element={
