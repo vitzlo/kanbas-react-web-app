@@ -17,8 +17,8 @@ function Courses() {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   const [course, setCourse] = useState({});
-  const API_BASE = "http://localhost:4000/api";
-  // const API_BASE = "https://kanbas-node-server-app-pivn.onrender.com/api";
+  // const API_BASE = "http://localhost:4000/api";
+  const API_BASE = "https://kanbas-node-server-app-pivn.onrender.com/api";
   // const API_BASE = process.env.REACT_APP_API_BASE;
   const URL = `${API_BASE}/courses`;
   const findCourseById = async (courseId) => {
