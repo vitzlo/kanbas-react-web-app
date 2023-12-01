@@ -51,7 +51,7 @@ function Signup() {
       </div>
       <div className="kb-sub-flex-content-container">
         <div>
-          <button className="btn btn-primary mb-1" onClick={signup}>
+          <button className="btn btn-success mb-1" onClick={signup}>
             Sign Up
           </button>
         </div>

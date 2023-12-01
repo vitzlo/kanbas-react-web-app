@@ -43,41 +43,64 @@ function Account() {
       <div className="kb-sub-flex-content-container">
         {account && (
           <div>
-            <input
-              className="form-control form-input-field"
-              value={account.password}
-              onChange={(e) =>
-                setAccount({ ...account, password: e.target.value })
-              }
-            />
-            <input
-              className="form-control form-input-field"
-              value={account.firstName}
-              onChange={(e) =>
-                setAccount({ ...account, firstName: e.target.value })
-              }
-            />
-            <input
-              className="form-control form-input-field"
-              value={account.lastName}
-              onChange={(e) =>
-                setAccount({ ...account, lastName: e.target.value })
-              }
-            />
-            <input
-              className="form-control form-input-field"
-              value={account.dob}
-              onChange={(e) => setAccount({ ...account, dob: e.target.value })}
-            />
-            <input
-              className="form-control form-input-field"
-              value={account.email}
-              onChange={(e) =>
-                setAccount({ ...account, email: e.target.value })
-              }
-            />
+            <div>
+              <label for="account-password">Password:</label>
+              <input
+                id="account-password"
+                className="form-control form-input-field"
+                value={account.password}
+                onChange={(e) =>
+                  setAccount({ ...account, password: e.target.value })
+                }
+              />
+            </div>
+            <div>
+              <label for="account-first-name">First Name:</label>
+              <input
+                id="account-first-name"
+                className="form-control form-input-field"
+                value={account.firstName}
+                onChange={(e) =>
+                  setAccount({ ...account, firstName: e.target.value })
+                }
+              />
+            </div>
+            <div>
+              <label for="account-last-name">Last Name:</label>
+              <input
+                id="account-last-name"
+                className="form-control form-input-field"
+                value={account.lastName}
+                onChange={(e) =>
+                  setAccount({ ...account, lastName: e.target.value })
+                }
+              />
+            </div>
+            <div>
+              <label for="account-dob">Date of Birth:</label>
+              <input
+                id="account-dob"
+                className="form-control form-input-field"
+                value={account.dob}
+                onChange={(e) =>
+                  setAccount({ ...account, dob: e.target.value })
+                }
+              />
+            </div>
+            <div>
+              <label for="account-email">Email:</label>
+              <input
+                id="account-email"
+                className="form-control form-input-field"
+                value={account.email}
+                onChange={(e) =>
+                  setAccount({ ...account, email: e.target.value })
+                }
+              />
+            </div>
             <select
               className="form-select"
+              value={account.role}
               onChange={(e) => setAccount({ ...account, role: e.target.value })}
             >
               <option value="USER">User</option>
@@ -93,6 +116,13 @@ function Account() {
             </button>
             <Link to="/Kanbas/admin/users" className="btn btn-warning mb-1">
               Users
+            </Link>
+          </div>
+        )}
+        {!account && (
+          <div>
+            <Link to="/Kanbas/signin" className="btn btn-primary mb-1">
+              Login Page
             </Link>
           </div>
         )}
